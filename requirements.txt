@@ -1,0 +1,38 @@
+# Deep Learning & Transformers
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+accelerate>=0.24.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+nltk>=3.8.0
+spacy>=3.7.0
+
+# Visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.17.0
+wordcloud>=1.9.2
+
+# Machine Learning & Evaluation
+scikit-learn>=1.3.0
+evaluate>=0.4.0
+
+# Experiment Tracking
+wandb>=0.16.0
+
+# Jupyter & Development
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.25.0
+
+# Optional: Web App (uncomment when needed)
+# streamlit>=1.28.0
+# fastapi>=0.104.0
+# gradio>=4.4.0
+
+# Utilities
+tqdm>=4.66.0
+python-dotenv>=1.0.0

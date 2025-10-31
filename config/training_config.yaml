@@ -1,0 +1,78 @@
+# SmartReview - Baseline BERT Training Configuration
+# Optimized for NVIDIA RTX 3050 (4GB VRAM)
+
+model:
+  name: "bert-base-uncased"
+  num_labels: 3
+  dropout: 0.1
+  freeze_bert: false
+
+training:
+  # Batch size optimized for 4GB GPU
+  batch_size: 8              # Reduce to 4 if OOM errors
+  num_epochs: 3
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  warmup_steps: 500
+  max_grad_norm: 1.0
+  
+  # For gradient accumulation (optional)
+  gradient_accumulation_steps: 2  # Effective batch size = 16
+
+data:
+  # Sequence length optimized for memory
+  max_length: 256            # Reduce to 128 if OOM errors
+  text_column: "cleaned_text"
+  label_column: "sentiment"
+  
+  # Data paths
+  train_path: "Dataset/processed/train.csv"
+  val_path: "Dataset/processed/val.csv"
+  test_path: "Dataset/processed/test.csv"
+
+# Class weights from Phase 2 analysis
+class_weights:
+  Negative: 0.676
+  Neutral: 3.165
+  Positive: 0.454
+
+# Output directories
+paths:
+  checkpoint_dir: "models/baseline/checkpoints"
+  log_dir: "models/baseline/logs"
+  results_dir: "models/baseline/results"
+  figures_dir: "outputs/figures/training"
+
+# Device settings
+device:
+  use_cuda: true             # Set to false to force CPU
+  device_id: 0               # GPU device ID (0 for single GPU)
+
+# Logging
+logging:
+  print_every: 100           # Print loss every N batches
+  save_every_epoch: true     # Save checkpoint after each epoch
+  tensorboard: false         # Enable TensorBoard logging
+
+# Evaluation
+evaluation:
+  eval_batch_size: 16        # Larger batch for evaluation (no gradients)
+  save_predictions: true     # Save predictions to file
+  plot_confusion_matrix: true
+  save_classification_report: true
+
+# Early stopping (optional)
+early_stopping:
+  enabled: false
+  patience: 2                # Stop if no improvement for N epochs
+  monitor: "val_f1"          # Metric to monitor
+
+# Random seed for reproducibility
+seed: 42
+
+# Notes:
+# - max_length=256 allows most reviews to fit (99%+ coverage)
+# - batch_size=8 fits comfortably in 4GB VRAM
+# - gradient_accumulation_steps=2 gives effective batch_size=16
+# - Neutral class has highest weight (3.165) due to low frequency
+# - Training should take ~15-20 min/epoch on RTX 3050

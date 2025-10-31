@@ -1,0 +1,186 @@
+{
+  "aspects": {
+    "battery": {
+      "name": "Battery Life",
+      "keywords": [
+        "battery", "charge", "charging", "power", "drain", "battery life",
+        "recharge", "charger", "charged", "uncharged", "long-lasting",
+        "quick charge", "fast charging", "battery drain", "power consumption"
+      ],
+      "description": "Reviews discussing battery performance, charging speed, and power management",
+      "emoji": "🔋"
+    },
+    "screen": {
+      "name": "Screen/Display",
+      "keywords": [
+        "screen", "display", "brightness", "resolution", "lcd", "oled",
+        "amoled", "touchscreen", "scratch", "gorilla glass", "screen size",
+        "bezel", "notch", "pixel", "color", "vivid", "dim", "bright"
+      ],
+      "description": "Reviews about display quality, brightness, size, and durability",
+      "emoji": "📱"
+    },
+    "camera": {
+      "name": "Camera Quality",
+      "keywords": [
+        "camera", "photo", "picture", "lens", "megapixel", "mp", "zoom",
+        "flash", "focus", "blur", "selfie", "front camera", "rear camera",
+        "video", "recording", "image quality", "low light", "night mode"
+      ],
+      "description": "Reviews about camera performance, photo/video quality",
+      "emoji": "📷"
+    },
+    "signal": {
+      "name": "Signal/Reception",
+      "keywords": [
+        "signal", "reception", "network", "coverage", "bars", "connectivity",
+        "antenna", "4g", "5g", "lte", "3g", "wifi", "bluetooth", "gps",
+        "connection", "disconnect", "drop call", "signal strength"
+      ],
+      "description": "Reviews about signal strength, network connectivity, and reception",
+      "emoji": "📶"
+    },
+    "audio": {
+      "name": "Audio/Sound",
+      "keywords": [
+        "speaker", "sound", "volume", "audio", "loud", "quiet", "ringer",
+        "ringtone", "earphone", "headphone", "jack", "microphone", "mic",
+        "voice", "call quality", "speaker phone", "noise", "clear", "muffled"
+      ],
+      "description": "Reviews about speaker quality, volume, call clarity, and audio features",
+      "emoji": "🔊"
+    },
+    "durability": {
+      "name": "Build Quality/Durability",
+      "keywords": [
+        "durable", "drop", "break", "crack", "sturdy", "fragile", "tough",
+        "rugged", "shatter", "scratch resistant", "waterproof", "water resistant",
+        "build quality", "solid", "flimsy", "cheap plastic", "metal", "glass"
+      ],
+      "description": "Reviews about phone durability, build materials, and physical robustness",
+      "emoji": "💪"
+    },
+    "performance": {
+      "name": "Performance/Speed",
+      "keywords": [
+        "fast", "slow", "lag", "laggy", "smooth", "performance", "speed",
+        "processor", "ram", "storage", "memory", "freeze", "crash", "hang",
+        "responsive", "sluggish", "multitask", "app", "load", "boot"
+      ],
+      "description": "Reviews about processing speed, responsiveness, and overall performance",
+      "emoji": "⚡"
+    },
+    "price": {
+      "name": "Price/Value",
+      "keywords": [
+        "price", "cost", "value", "worth", "expensive", "cheap", "affordable",
+        "money", "budget", "deal", "overpriced", "underpriced", "dollar",
+        "bang for buck", "value for money", "pricey", "reasonable"
+      ],
+      "description": "Reviews discussing pricing, value for money, and cost-effectiveness",
+      "emoji": "💰"
+    },
+    "design": {
+      "name": "Design/Aesthetics",
+      "keywords": [
+        "design", "look", "looks", "beautiful", "ugly", "sleek", "stylish",
+        "modern", "outdated", "bulky", "slim", "thin", "lightweight", "heavy",
+        "color", "appearance", "aesthetic", "premium", "cheap looking", "elegant"
+      ],
+      "description": "Reviews about phone design, appearance, and aesthetic appeal",
+      "emoji": "🎨"
+    },
+    "buttons": {
+      "name": "Buttons/Keypad",
+      "keywords": [
+        "button", "buttons", "keypad", "keyboard", "key", "press", "touch",
+        "tactile", "responsive", "clicky", "mushy", "power button", "volume button",
+        "home button", "cramped", "small buttons", "large buttons", "easy to press"
+      ],
+      "description": "Reviews about physical buttons, keypad, and input mechanisms",
+      "emoji": "⌨️"
+    },
+    "software": {
+      "name": "Software/UI",
+      "keywords": [
+        "software", "android", "ios", "windows", "ui", "interface", "menu",
+        "settings", "update", "os", "operating system", "version", "app",
+        "bloatware", "user interface", "easy to use", "complicated", "intuitive"
+      ],
+      "description": "Reviews about software, operating system, and user interface",
+      "emoji": "💻"
+    },
+    "features": {
+      "name": "Features",
+      "keywords": [
+        "feature", "text", "sms", "messaging", "game", "calculator", "alarm",
+        "calendar", "clock", "timer", "voice dial", "speakerphone", "vibrate",
+        "ringtone", "customize", "wallpaper", "theme", "bluetooth", "infrared"
+      ],
+      "description": "Reviews about additional features and functionality",
+      "emoji": "🎮"
+    },
+    "size": {
+      "name": "Size/Form Factor",
+      "keywords": [
+        "size", "small", "large", "big", "compact", "portable", "pocket",
+        "purse", "hand", "one hand", "grip", "form factor", "dimensions",
+        "width", "height", "thickness", "fits", "comfortable to hold"
+      ],
+      "description": "Reviews about physical size and form factor",
+      "emoji": "📏"
+    },
+    "service": {
+      "name": "Service/Carrier",
+      "keywords": [
+        "service", "carrier", "provider", "plan", "contract", "verizon",
+        "att", "t-mobile", "sprint", "customer service", "support", "activation",
+        "sim", "sim card", "unlocked", "locked", "network provider"
+      ],
+      "description": "Reviews about carrier service and customer support",
+      "emoji": "📞"
+    }
+  },
+  "sentiment_mapping": {
+    "positive": {
+      "label": 1,
+      "ratings": [4, 5],
+      "description": "Positive sentiment reviews"
+    },
+    "neutral": {
+      "label": 0,
+      "ratings": [3],
+      "description": "Neutral sentiment reviews"
+    },
+    "negative": {
+      "label": -1,
+      "ratings": [1, 2],
+      "description": "Negative sentiment reviews"
+    }
+  },
+  "preprocessing_rules": {
+    "min_review_length": 10,
+    "max_review_length": 512,
+    "remove_patterns": [
+      "html_tags",
+      "urls",
+      "email_addresses",
+      "special_characters_excessive"
+    ],
+    "keep_patterns": [
+      "emojis",
+      "basic_punctuation",
+      "numbers"
+    ]
+  },
+  "training_config": {
+    "train_split": 0.7,
+    "val_split": 0.15,
+    "test_split": 0.15,
+    "random_seed": 42,
+    "batch_size": 16,
+    "learning_rate": 2e-5,
+    "num_epochs": 3,
+    "warmup_steps": 500
+  }
+}
