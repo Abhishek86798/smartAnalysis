@@ -1,0 +1,37 @@
+{
+  "test_metrics": {
+    "accuracy": 0.8822756065495398,
+    "precision": 0.7237782967367744,
+    "recall": 0.7238698621200972,
+    "f1_macro": 0.7234989561201833,
+    "f1_positive": 0.9488261188554659,
+    "f1_neutral": 0.36348267117497884,
+    "f1_negative": 0.8581880783301055
+  },
+  "train_metrics": {
+    "train_loss": 0.25965983226913647,
+    "train_steps": 12205,
+    "train_runtime": 4005.2751
+  },
+  "config": {
+    "pretrained_model_path": "..\\models\\distilroberta_pretrained",
+    "max_length": "256",
+    "num_labels": "3",
+    "epochs": "5",
+    "batch_size": "4",
+    "gradient_accumulation_steps": "4",
+    "learning_rate": "2e-05",
+    "warmup_ratio": "0.1",
+    "weight_decay": "0.01",
+    "data_dir": "..\\Dataset\\processed",
+    "output_dir": "..\\models\\distilroberta_sentiment",
+    "logs_dir": "..\\models\\distilroberta_sentiment\\logs",
+    "results_dir": "..\\outputs\\distilroberta_results",
+    "device": "cuda",
+    "fp16": "True",
+    "logging_steps": "50",
+    "save_steps": "500",
+    "eval_steps": "500"
+  },
+  "timestamp": "2025-11-05T00:05:56.571721"
+}

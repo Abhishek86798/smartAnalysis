@@ -1,0 +1,18 @@
+{
+  "total_reviews": 8367,
+  "aspect_frequency": {
+    "battery": 2538,
+    "performance": 3057,
+    "design": 1517,
+    "audio": 938,
+    "durability": 1686,
+    "camera": 1574,
+    "screen": 1923,
+    "price": 2087,
+    "signal": 1465,
+    "storage": 876
+  },
+  "avg_aspects_per_review": 2.110792398709215,
+  "avg_confidence": 0.9470075421739653,
+  "reviews_with_aspects": 6105
+}
