@@ -325,16 +325,16 @@ Based on phone review analysis:
 
 | Aspect | Keywords | Example |
 |--------|----------|---------|
-| 🔋 **Battery** | battery, charge, power, drain | "Battery life is amazing" |
-| 📱 **Screen** | screen, display, brightness | "Screen quality is excellent" |
-| 📷 **Camera** | camera, photo, picture, lens | "Camera is disappointing" |
-| 📶 **Signal** | signal, reception, network | "Great signal strength" |
-| 🔊 **Audio** | speaker, sound, volume, ringer | "Loud and clear speaker" |
-| 💪 **Durability** | durable, drop, break, sturdy | "Phone is very fragile" |
-| ⚡ **Performance** | fast, slow, lag, smooth | "Performance is sluggish" |
-| 💰 **Price** | price, value, cheap, expensive | "Worth every penny" |
-| 🎨 **Design** | design, look, beautiful, ugly | "Sleek and modern design" |
-| ⌨️ **Buttons** | button, keypad, keyboard | "Buttons are too small" |
+|  **Battery** | battery, charge, power, drain | "Battery life is amazing" |
+|  **Screen** | screen, display, brightness | "Screen quality is excellent" |
+|  **Camera** | camera, photo, picture, lens | "Camera is disappointing" |
+|  **Signal** | signal, reception, network | "Great signal strength" |
+|  **Audio** | speaker, sound, volume, ringer | "Loud and clear speaker" |
+|  **Durability** | durable, drop, break, sturdy | "Phone is very fragile" |
+|  **Performance** | fast, slow, lag, smooth | "Performance is sluggish" |
+|  **Price** | price, value, cheap, expensive | "Worth every penny" |
+|  **Design** | design, look, beautiful, ugly | "Sleek and modern design" |
+|  **Buttons** | button, keypad, keyboard | "Buttons are too small" |
 
 ---
 
@@ -374,13 +374,6 @@ Based on phone review analysis:
 
 ---
 
-## 👥 Team
-
-- **[Your Name]** - Development & Research
-- **[Advisor Name]** - Project Guide
-
----
-
 ## 📝 License
 
 This project is for educational purposes (BE Project 2025).
@@ -398,13 +391,5 @@ This project is for educational purposes (BE Project 2025).
 
 ---
 
-## 📞 Contact
-
-For questions or collaborations:
-- Email: [your-email]
-- GitHub: [your-github]
-
----
-
-**Last Updated:** October 28, 2025
+**Last Updated:** June 12, 2026
 
